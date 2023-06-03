@@ -1,7 +1,23 @@
 // import Head from 'next/head'
-import Image from 'next/image'
 import {BsFillMoonStarsFill} from "react-icons/bs"
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from "react-icons/ai"
+import {
+  AiFillTwitterCircle, 
+  AiFillLinkedin,
+  AiFillYoutube,
+  AiFillGithub,
+  AiOutlineInstagram
+} from "react-icons/ai"
+import Image from "next/image"
+import santi from "../../public/santi-avatar.png"
+import design from "../../public/design.png"
+import code from "../../public/code.png"
+import consulting from "../../public/consulting.png"
+import web1 from "../../public/web1.png"
+import web2 from "../../public/web2.png"
+import web3 from "../../public/web3.png"
+import web4 from "../../public/web4.png"
+import web5 from "../../public/web5.png"
+import web6 from "../../public/web6.png"
 
 export default function Home() {
   return (
@@ -12,10 +28,10 @@ export default function Home() {
           <link rel="icon" href="/src/favicon.ico" />
         </Head> */}
 
-        <main className='bg-white px-10 '>
+        <main className='bg-gray-100 px-10 md:px-20 lg:px-60'>
           <section className='min-h-screen'>
 
-            <nav className='py-10 mb-12 flex justify-between '>
+            <nav className='py-10 mb-2 flex justify-between '>
 
               <h1 className='text-xl font-burtons'>developedBySanti</h1>
 
@@ -37,25 +53,111 @@ export default function Home() {
 
             </nav>
 
-            <div>
-              <h2>Santiago Bavaresco</h2>
-              <h3>Fullstack Developer</h3>
-              <p>
-                Hi, I'm Santiago, passionate about in software development and IT world.
-                I am very interested in technology, very patient, meticulous and manage to seek efficiency in the
-                emerging problems that are presented to us in the world of programming
+            <div className='text-center px-1'>
+              <h2 className='text-5xl py-2 text-teal-500 font-medium md:text-7xl'>Santiago Bavaresco</h2>
+              <h3 className='text-2xl py-2 md:text-4xl'>Fullstack Developer</h3>
+              <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>
+                Passionate about in software development and IT world, providing services for programming and tech infrastucture.
+                Join me down below and let's get dive in!
               </p>
             </div>
 
-            <div>
+            <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
 
-              <a> <AiFillTwitterCircle/> </a>
+              {/* <a> <AiFillTwitterCircle/> </a> */}
+              <a> <AiFillGithub/> </a>
               <a> <AiFillLinkedin/> </a>
-              <a> <AiFillYoutube/> </a>
+              <a> <AiOutlineInstagram/> </a>
 
             </div>
 
+            <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 my-10 overflow-hidden md:h-96 md:w-96'>
+              <Image src={santi} className="mt-2" layout="fill" objectFit="cover"/>
+            </div>
+
           </section>
+
+        {/* *************************************************************************** */}
+
+        <section>
+          <div>
+            <h3 className="text-3xl py-1"> Services I offer</h3>
+            <p className="text-md py-2 leading-8 text-gray-800"> 
+              With a proactive, analytical, creative, professional with the capacity for planning, organization and team
+              leadership; also with skills and criteria for decision making and <span className="text-teal-500">problem solving</span> labor problems, common
+              sense, security and permanent dialogue <span className="text-teal-500">to meet the objectives</span> with different areas.
+            </p>
+
+            <p className="text-md py-2 leading-8 text-gray-800"> 
+              I am very interested in technology, very patient, meticulous and manage to seek efficiency in the emerging
+              problems that are presented to us in the world of programming. I'm excited to share that I have completed Henry's course in Full Stack Web Development.
+            </p>
+          </div>
+
+          <div className="lg:flex gap-10">
+            {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+            <div className=" text-center shadow-lg p-10 rounded-xl my-10" >
+              <div className="flex justify-center">
+                <Image claseName="flex justify-center" src={design} width={100} height={100} />
+              </div>
+              <h3 className="text-lg font-medium pt-4 pb-2"> Beutiful deings</h3>
+                <p className="py-2"> Creating elegant desing suited fpr yput client</p>
+              <h4 className="py-4 text-teal-600">Desing tools i use</h4>
+                <p className="text-gray-800 py-1">Photoshop</p>
+                <p className="text-gray-800 py-1">Ilustrator</p>
+                <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+            <div className=" text-center shadow-lg p-10 rounded-xl my-10" >
+              <div className="flex justify-center">
+                <Image claseName="flex justify-center" src={code} width={100} height={100} />
+              </div>
+              <h3 className="text-lg font-medium pt-4 pb-2"> Beutiful deings</h3>
+                <p className="py-2"> Creating elegant desing suited fpr yput client</p>
+              <h4 className="py-4 text-teal-600">Desing tools i use</h4>
+                <p className="text-gray-800 py-1">Photoshop</p>
+                <p className="text-gray-800 py-1">Ilustrator</p>
+                <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+            <div className=" text-center shadow-2xl p-10 rounded-xl my-10" >
+              <div className="flex justify-center">
+                <Image claseName="flex justify-center" src={consulting} width={100} height={100} />
+              </div>
+              <h3 className="text-lg font-medium pt-4 pb-2"> Beutiful deings</h3>
+                <p className="py-2"> Creating elegant desing suited fpr yput client</p>
+              <h4 className="py-4 text-teal-600">Desing tools i use</h4>
+                <p className="text-gray-800 py-1">Photoshop</p>
+                <p className="text-gray-800 py-1">Ilustrator</p>
+                <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+          </div>
+        </section>
+
+        <section >
+          <div >
+            <h3 className="text-3xl py-1">Portfolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800"> 
+              With a proactive, analytical, creative, professional with the capacity for planning, organization and team
+              leadership; also with skills and criteria for decision making and <span className="text-teal-500">problem solving</span> labor problems, common
+              sense, security and permanent dialogue <span className="text-teal-500">to meet the objectives</span> with different areas.
+            </p>
+
+            <p className="text-md py-2 leading-8 text-gray-800"> 
+              I am very interested in technology, very patient, meticulous and manage to seek efficiency in the emerging
+              problems that are presented to us in the world of programming. I'm excited to share that I have completed Henry's course in Full Stack Web Development.
+            </p>
+          </div>
+
+          <div>
+            <div><Image src={web1}/></div>
+            <div><Image src={web2}/></div>
+            <div><Image src={web3}/></div>
+            <div><Image src={web4}/></div>
+            <div><Image src={web5}/></div>
+          </div>
+        </section>
 
         </main>
       </div>
