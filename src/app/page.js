@@ -156,40 +156,41 @@ export default function Home() {
           <div className="lg:flex gap-10">
             
             {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-            <div className=" text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700" >
+            <div className=" text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700 flex-1" >
               <div className="flex justify-center">
                 <Image claseName="flex justify-center" src={code} width={100} height={100} />
               </div>
-              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Beutiful deings</h3>
-                <p className="py-2 dark:text-gray-300"> Creating elegant desing suited fpr yput client</p>
-              <h4 className="py-4 text-teal-600">Desing tools i use</h4>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Photoshop</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Ilustrator</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Figma</p>
+              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Code your project</h3>
+                <p className="py-2 dark:text-gray-300"> Do you have an idea for you next great website? Let's make it a reality</p>
+              <h4 className="py-4 text-teal-600">Development knowledge</h4>
+                <p className="text-gray-800 py-1 dark:text-gray-300">React, React-Native</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">NextJS, Tailwind</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">PostGres, MongoDB</p>
             </div>
             {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-            <div className=" text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700" >
+            <div className=" text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700 flex-1" >
               <div className="flex justify-center">
                 <Image claseName="flex justify-center" src={cpu} width={100} height={100} />
               </div>
-              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Beutiful deings</h3>
-                <p className="py-2 dark:text-gray-300"> Creating elegant desing suited fpr yput client</p>
-              <h4 className="py-4 text-teal-600">Desing tools i use</h4>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Photoshop</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Ilustrator</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Figma</p>
+              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Connectivity and Security</h3>
+                <p className="py-2 dark:text-gray-300"> Creating robust and secure IT infrastructure, networking, and security systems to meet your needs.</p>
+              <h4 className="py-4 text-teal-600"> Implementations</h4>
+                <p className="text-gray-800 py-1 dark:text-gray-300">Network & Hardware Setup</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">CCTV, Alarms & Security Sys.</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">Fiber Optic Splicer & FTTH </p>
             </div>
             {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-            <div className=" text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-700" >
+            <div className=" text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-700 flex-1" >
               <div className="flex justify-center">
                 <Image claseName="flex justify-center" src={consulting} width={100} height={100} />
               </div>
-              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Beutiful deings</h3>
-                <p className="py-2 dark:text-gray-300"> Creating elegant desing suited fpr yput client</p>
+              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Consulting</h3>
+                <p className="py-2 dark:text-gray-300"> Are you interested in feedback for your current project? I can
+                give you tips and tricks to level it up.</p>
               <h4 className="py-4 text-teal-600">Desing tools i use</h4>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Photoshop</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Ilustrator</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Figma</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">Front-End, Web, UX</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">Back-End, Databases</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">Home Servers, Datacenters</p>
             </div>
             {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
           </div>
