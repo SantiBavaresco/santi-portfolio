@@ -14,9 +14,10 @@ import {
   
 
 } from "react-icons/ai"
-import { Carousel } from 'react-responsive-carousel';
+
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 // import ImageCarousel from "../app/carousel.jsx"
+import { Carousel } from 'react-responsive-carousel';
 import Image from "next/image"
 import ImageCarousel from "../app/ImageCarousel"
 import Footer from '../app/Footer';
@@ -125,8 +126,8 @@ export default function Home() {
               <h2 className='text-5xl py-2 text-teal-500 font-medium md:text-7xl'>Santiago Bavaresco</h2>
               <h3 className='text-2xl py-2 md:text-4xl dark:text-white'>Fullstack Developer</h3>
               <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300'>
-                Passionate about in software development and IT world, providing services for programming and tech infrastucture.
-                Join me down below and let's get dive in!
+                Passionate about in software development and IT world, providing services for programming and tech infrastucture. 
+                Join me down below and let&apos;s get dive in!
               </p>
             </div>
 
@@ -172,7 +173,7 @@ export default function Home() {
         </div>
     {/* ------------------------------ AVATAR SANTI ------------------------------ */}
             <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 my-10 overflow-hidden md:h-96 md:w-96'>
-              <Image src={santi} className="mt-2" layout="fill" objectFit="cover"/>
+              <Image src={santi} className="mt-2" alt="1"/>
             </div>
 
           </section>
@@ -188,7 +189,7 @@ export default function Home() {
             </p>
 
             <p className="text-md py-2 leading-8 text-justify text-gray-800 dark:text-gray-300"> 
-            I'm a Full Stack Developer with a strong focus and a passion for solving complex challenges. I also excel in Front End development, 
+            I&apos;m a Full Stack Developer with a strong focus and a passion for solving complex challenges. I also excel in Front End development, 
             enhancing user experiences with visually appealing interfaces. My expertise extends to React Native for mobile app development, 
             enabling me to create cross-platform applications. Delivering high-quality, 
             seamless applications that meet user needs.
@@ -200,10 +201,10 @@ export default function Home() {
             {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
             <div className=" text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700 flex-1" >
               <div className="flex justify-center">
-                <Image claseName="flex justify-center" src={code} width={100} height={100} />
+                <Image claseName="flex justify-center" src={code} width={100} height={100} alt="1"/>
               </div>
               <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Code your project</h3>
-                <p className="py-2 dark:text-gray-300"> Do you have an idea for you next great website? Let's make it a reality!</p>
+                <p className="py-2 dark:text-gray-300"> Do you have an idea for you next great website? Let&apos;s make it a reality!</p>
               <h4 className="py-4 text-teal-600">Development knowledge</h4>
                 <p className="text-gray-800 py-1 dark:text-gray-300">React, React-Native</p>
                 <p className="text-gray-800 py-1 dark:text-gray-300">NextJS, Tailwind</p>
@@ -212,7 +213,7 @@ export default function Home() {
             {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
             <div className=" text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700 flex-1" >
               <div className="flex justify-center">
-                <Image claseName="flex justify-center" src={cpu} width={100} height={100} />
+                <Image claseName="flex justify-center" src={cpu} width={100} height={100} alt="1"/>
               </div>
               <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Connectivity and Security</h3>
                 <p className="py-2 dark:text-gray-300"> Creating robust and secure IT infrastructure, networking, and security systems to meet your needs.</p>
@@ -224,7 +225,7 @@ export default function Home() {
             {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
             <div className=" text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-700 flex-1" >
               <div className="flex justify-center">
-                <Image claseName="flex justify-center" src={consulting} width={100} height={100} />
+                <Image claseName="flex justify-center" src={consulting} width={100} height={100} alt="1"/>
               </div>
               <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Consulting</h3>
                 <p className="py-2 dark:text-gray-300"> Are you interested in feedback for your current project? I can
@@ -242,11 +243,12 @@ export default function Home() {
           <div >
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300"> 
-              It showcases my ability to build interactive interfaces with <span className="text-teal-500">React</span>, develop cross-platform mobile apps 
-              using <span className="text-teal-500">React Native</span> , 
+              It showcases my ability to build interactive interfaces with <span className="text-teal-500">React</span>, 
+              develop cross-platform mobile apps using <span className="text-teal-500">React Native</span> , 
               efficiently manage databases with <span className="text-cyan-500">PostgreSQL</span>,
               and utilize <span className="text-cyan-500">MongoDB</span> for flexible NoSQL storage, 
-              and write clean code with <span className="text-yellow-500">JavaScript</span>. With my Fullstack capabilities, I deliver comprehensive solutions across platforms.
+              and write clean code with <span className="text-yellow-500">JavaScript</span>. With my Fullstack capabilities, 
+              I deliver comprehensive solutions across platforms.
             </p>
           </div>
 
@@ -269,10 +271,10 @@ export default function Home() {
                 </a>
               </div>
               <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false}>
-                <ImageCarousel keydiv="1" image={web_4_1}/>
-                <ImageCarousel keydiv="2" image={web_4_2}/>
-                <ImageCarousel keydiv="3" image={web_4_3}/>
-                <ImageCarousel keydiv="4" image={web_4_4}/>
+                <ImageCarousel keydiv="1" image={web_4_1} alt="1"/>
+                <ImageCarousel keydiv="2" image={web_4_2} alt="1"/>
+                <ImageCarousel keydiv="3" image={web_4_3} alt="1"/>
+                <ImageCarousel keydiv="4" image={web_4_4} alt="1"/>
               </Carousel>
             </div> 
         {/* ------------------------------ Eat Out Dashboar ------------------------------ */}
@@ -292,9 +294,9 @@ export default function Home() {
                 </a>
               </div>
               <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false}>
-                <ImageCarousel keydiv="1" image={web_3_1}/>
-                <ImageCarousel keydiv="2" image={web_3_2}/>
-                <ImageCarousel keydiv="3" image={web_3_3}/>
+                <ImageCarousel keydiv="1" image={web_3_1} alt="1"/>
+                <ImageCarousel keydiv="2" image={web_3_2} alt="1"/>
+                <ImageCarousel keydiv="3" image={web_3_3} alt="1"/>
               </Carousel>
             </div>
         {/* ------------------------------ PI Countries ------------------------------ */}            
@@ -314,10 +316,10 @@ export default function Home() {
                 </a>
               </div>
               <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false}>
-                <ImageCarousel keydiv="1" image={web_2_1}/>
-                <ImageCarousel keydiv="2" image={web_2_2}/>
-                <ImageCarousel keydiv="3" image={web_2_3}/>
-                <ImageCarousel keydiv="4" image={web_2_4}/>
+                <ImageCarousel keydiv="1" image={web_2_1} alt="1"/>
+                <ImageCarousel keydiv="2" image={web_2_2} alt="1"/>
+                <ImageCarousel keydiv="3" image={web_2_3} alt="1"/>
+                <ImageCarousel keydiv="4" image={web_2_4} alt="1"/>
               </Carousel>
             </div>
         {/* ------------------------------ Rick & Morty ------------------------------ */}
@@ -338,9 +340,9 @@ export default function Home() {
                 </a>
               </div>
               <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false}>
-                <ImageCarousel keydiv="1" image={web_1_1}/>
-                <ImageCarousel keydiv="3" image={web_1_2}/>
-                <ImageCarousel keydiv="4" image={web_1_3}/>
+                <ImageCarousel keydiv="1" image={web_1_1} alt="1"/>
+                <ImageCarousel keydiv="3" image={web_1_2} alt="1"/>
+                <ImageCarousel keydiv="4" image={web_1_3} alt="1"/>
                 
               </Carousel>
             </div>
@@ -349,10 +351,10 @@ export default function Home() {
                 <h2 className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">News Web - Cards</h2>
               </div>
               <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false}>
-                <ImageCarousel keydiv="1" image={web1}/>
-                <ImageCarousel keydiv="2" image={web6}/>
-                <ImageCarousel keydiv="3" image={web2}/>
-                <ImageCarousel keydiv="4" image={web3}/>
+                <ImageCarousel keydiv="1" image={web1} alt="1"/>
+                <ImageCarousel keydiv="2" image={web6} alt="1"/>
+                <ImageCarousel keydiv="3" image={web2} alt="1"/>
+                <ImageCarousel keydiv="4" image={web3} alt="1"/>
               </Carousel>
             </div> */}
           </div>
@@ -443,10 +445,10 @@ export default function Home() {
             {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
             <div className=" text-center shadow-lg p-10 rounded-xl mb-10 mt-2 dark:bg-gray-700" >
               <div className="flex justify-center">
-                <Image claseName="flex justify-center" src={santi1} width={120} height={120} />
+                <Image claseName="flex justify-center" src={santi1} width={120} height={120} alt="1" />
               </div>
               <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> About Santi </h3>
-                <p className="py-2 dark:text-gray-300"> I'm a friendly 29-year-old from Argentina.</p>
+                <p className="py-2 dark:text-gray-300"> I&apos;m a friendly 29-year-old from Argentina.</p>
               <h3 className="py-4 text-teal-600">Things I like</h3>
                 <p className="text-gray-800 py-1 dark:text-gray-300">⚡ Fun fact: I love Airsoft, very good strategist and a lot of good camaraderie. 🔫</p>
                 <p className="text-gray-800 py-1 dark:text-gray-300">🏕️ I love hanging out outdoors or parks, camping and fishing. 🎣</p>
