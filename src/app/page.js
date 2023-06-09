@@ -139,7 +139,7 @@ export default function Home() {
                 <div className="">
                   <AiFillGithub className="text-gray-600 dark:text-gray-200 group-hover:text-green-500" />
                   <p className="absolute left-[22%] top-5 text-xl transition-opacity duration-[2000ms] ease-out 
-                    group-hover:ease-in opacity-0 text-gray-800 dark:text-gray-300 group-hover:opacity-100 lg:left-[38%] md:left-[32%]">
+                    group-hover:ease-in opacity-0 text-gray-800 dark:text-gray-300 group-hover:opacity-100 lg:left-[37%] md:left-[34%]">
                     /SantiBavaresco
                   </p>
                 </div>
