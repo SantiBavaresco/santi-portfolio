@@ -126,7 +126,7 @@ export default function Home() {
               <h2 className='text-5xl py-2 text-teal-500 font-medium md:text-7xl'>Santiago Bavaresco</h2>
               <h3 className='text-2xl py-2 md:text-4xl dark:text-white'>Fullstack Developer</h3>
               <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300'>
-                Passionate about in software development and IT world, providing services for programming and tech infrastucture. 
+                Passionate in software development and IT world, providing services for programming and tech infrastucture. 
                 Join me down below and let&apos;s get dive in!
               </p>
             </div>
@@ -183,7 +183,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white"> Services I offer</h3>
             <p className="text-md py-2 leading-8 text-justify text-gray-800 dark:text-gray-300"> 
-              With a proactive, analytical, creative, professional with the capacity for planning, organization and team
+              With a proactive, analytical, creative and professional approach with the capacity for planning, organization and team
               leadership; also with skills and criteria for decision making and <span className="text-teal-500">problem solving</span> labor problems, common
               sense, security and permanent dialogue <span className="text-teal-500">to meet the objectives</span> with different areas.
             </p>
@@ -286,7 +286,7 @@ export default function Home() {
                       text-white px-4 py-2 my-2 rounded-xl ml-8
                       hvr_pulse
                       transition duration-300 ease-in-out hover:shadow-xl dark:hover:shadow-white/30' 
-                  >Dashboard EatOut - Restaurant Admin </h2> 
+                  >Dashboard EatOut - Admin </h2> 
                 </a>
                 <a href="https://github.com/EatOutPF/PF/tree/develop/FRONT/react-admin" 
                 target="_blank" rel="noopener noreferrer">
