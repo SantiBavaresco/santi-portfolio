@@ -3,23 +3,31 @@ import React from "react";
 import {BsFillMoonStarsFill, BsFillSunFill} from "react-icons/bs"
 import { useState, useEffect } from "react";
 import "../../styles/magic.css"
+import "node_modules/flag-icons/css/flag-icons.min.css";
 import {
   AiFillTwitterCircle, 
   AiFillLinkedin,
   AiFillYoutube,
   AiFillGithub,
-  AiOutlineInstagram
+  AiOutlineInstagram,
+  AiOutlineMail,
+  
+
 } from "react-icons/ai"
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 // import ImageCarousel from "../app/carousel.jsx"
 import Image from "next/image"
 import ImageCarousel from "../app/ImageCarousel"
+import Footer from '../app/Footer';
 import santi from "../../public/santi-avatar.png"
 import santi1 from "../../public/avatar.png"
 import cpu from "../../public/cpu.png"
 import code from "../../public/code.png"
 import consulting from "../../public/consulting.png"
+import usa from "../../public/flag-usa.png"
+import spa from "../../public/flag-spa.png"
+
 
 import web_1_1 from "../../public/web_1_1.png"
 import web_1_2 from "../../public/web_1_2.png"
@@ -44,6 +52,16 @@ export default function Home() {
   const buttonStyling = `flex space-x-3 mr-2 font-semibold bg-gradient-to-r from-blue-600 via-indigo-700 to-indigo-900 
   text-gray-100 rounded-sm ring-2 ring-blue-200 px-6 py-2 
   hover:bg-white  hover:text-white hover:ring-slate-300 mx-8`;
+
+  const [isActive, setIsActive] = useState(false);
+  const [language, setLanguage] = useState("en");
+
+  const handleChangeOrder =(event) => {
+    setLanguage(event.target.value);
+  };
+  const handleClick = () => {
+    setIsActive(!isActive);
+  };
 
   return (
       <div className={`${darkMode ? 'dark' : ''}`}> 
@@ -89,8 +107,16 @@ export default function Home() {
                     </button> 
                   </a>
                 </li>
-                <li></li>
-                <li></li>
+                <li>
+                
+                {/* <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                  data-te-select-init onChange={handleChangeOrder} value={language}>
+                  <option value="en"> <img src={usa} className="w-6" /> </option>
+                  <option value="es">Spanish  </option>
+                  <option value="it">Three</option>
+                </select> */}
+                </li>
+                <li>  </li>
               </ul>
 
             </nav>
@@ -155,15 +181,17 @@ export default function Home() {
         <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-white"> Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300"> 
+            <p className="text-md py-2 leading-8 text-justify text-gray-800 dark:text-gray-300"> 
               With a proactive, analytical, creative, professional with the capacity for planning, organization and team
               leadership; also with skills and criteria for decision making and <span className="text-teal-500">problem solving</span> labor problems, common
               sense, security and permanent dialogue <span className="text-teal-500">to meet the objectives</span> with different areas.
             </p>
 
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300"> 
-              I am very interested in technology, very patient, meticulous and manage to seek efficiency in the emerging
-              problems that are presented to us in the world of programming. I'm excited to share that I have completed Henry's course in Full Stack Web Development.
+            <p className="text-md py-2 leading-8 text-justify text-gray-800 dark:text-gray-300"> 
+            I'm a Full Stack Developer with a strong focus and a passion for solving complex challenges. I also excel in Front End development, 
+            enhancing user experiences with visually appealing interfaces. My expertise extends to React Native for mobile app development, 
+            enabling me to create cross-platform applications. Delivering high-quality, 
+            seamless applications that meet user needs.
             </p>
           </div>
     {/* --------------------------------------- CARDS --------------------------------------- */}
@@ -175,7 +203,7 @@ export default function Home() {
                 <Image claseName="flex justify-center" src={code} width={100} height={100} />
               </div>
               <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Code your project</h3>
-                <p className="py-2 dark:text-gray-300"> Do you have an idea for you next great website? Let's make it a reality</p>
+                <p className="py-2 dark:text-gray-300"> Do you have an idea for you next great website? Let's make it a reality!</p>
               <h4 className="py-4 text-teal-600">Development knowledge</h4>
                 <p className="text-gray-800 py-1 dark:text-gray-300">React, React-Native</p>
                 <p className="text-gray-800 py-1 dark:text-gray-300">NextJS, Tailwind</p>
@@ -228,7 +256,7 @@ export default function Home() {
               <div className=" flex flex-row justify-center gap-4">
                 <a href="https://expo.dev/accounts/eatoutpf/projects/EatOut/builds/3d73abef-bb86-4afc-976f-352510fbd43f" 
                 target="_blank" rel="noopener noreferrer">
-                  <h2 className='
+                  <h2 className=' text-center
                     bg-gradient-to-r from-cyan-500 to-teal-500
                     text-white px-4 py-2 my-2 rounded-xl ml-8
                     hvr_pulse
@@ -237,7 +265,7 @@ export default function Home() {
                 </a>  
                 <a href="https://github.com/EatOutPF/PF/tree/develop/FRONT/Native-2.0" 
                 target="_blank" rel="noopener noreferrer">
-                  <AiFillGithub className="text-5xl pt-1 hvr_pulse text-gray-600 dark:text-gray-200 group-hover:text-green-500" />
+                  <AiFillGithub className="text-5xl pt-1 hvr_pulse text-gray-600 dark:text-gray-200 rounded-full hover:shadow-xl dark:hover:shadow-white/30" />
                 </a>
               </div>
               <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false}>
@@ -251,7 +279,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <div className=" flex flex-row justify-center gap-4">
                 <a href="https://eatout-lac.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  <h2 className='
+                  <h2 className='text-center
                       bg-gradient-to-r from-cyan-500 to-teal-500
                       text-white px-4 py-2 my-2 rounded-xl ml-8
                       hvr_pulse
@@ -260,7 +288,7 @@ export default function Home() {
                 </a>
                 <a href="https://github.com/EatOutPF/PF/tree/develop/FRONT/react-admin" 
                 target="_blank" rel="noopener noreferrer">
-                  <AiFillGithub className="text-5xl pt-1 hvr_pulse text-gray-600 dark:text-gray-200 group-hover:text-green-500" />
+                  <AiFillGithub className="text-5xl pt-1  hvr_pulse text-gray-600 dark:text-gray-200 rounded-full hover:shadow-xl dark:hover:shadow-white/30" />
                 </a>
               </div>
               <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false}>
@@ -273,7 +301,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <div className=" flex flex-row justify-center gap-4">
                 <a href="https://henry-pi-countries-six.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  <h2 className='
+                  <h2 className='text-center
                       bg-gradient-to-r from-cyan-500 to-teal-500
                       text-white px-4 py-2 my-2 rounded-xl ml-8
                       hvr_pulse
@@ -282,7 +310,7 @@ export default function Home() {
                 </a>
                 <a href="https://github.com/SantiBavaresco/Henry-PI-Countries" 
                 target="_blank" rel="noopener noreferrer">
-                  <AiFillGithub className="text-5xl pt-1 hvr_pulse text-gray-600 dark:text-gray-200 group-hover:text-green-500" />
+                  <AiFillGithub className="text-5xl pt-1 hvr_pulse text-gray-600 dark:text-gray-200 rounded-full hover:shadow-xl dark:hover:shadow-white/30" />
                 </a>
               </div>
               <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false}>
@@ -297,7 +325,7 @@ export default function Home() {
               <div className=" flex flex-row justify-center gap-4">
                 <a href="https://www.linkedin.com/posts/santiago-bavaresco_checkpoint-m2-frontend-activity-7006828658598285312-AWPK?utm_source=share&utm_medium=member_desktop" 
                   target="_blank" rel="noopener noreferrer">
-                  <h2 className='
+                  <h2 className='text-center
                       bg-gradient-to-r from-cyan-500 to-teal-500
                       text-white px-4 py-2 my-2 rounded-xl ml-8
                       hvr_pulse
@@ -306,7 +334,7 @@ export default function Home() {
                 </a>
                 <a href="https://github.com/SantiBavaresco/Rick-Morty" 
                 target="_blank" rel="noopener noreferrer">
-                  <AiFillGithub className="text-5xl pt-1 hvr_pulse text-gray-600 dark:text-gray-200 group-hover:text-green-500" />
+                  <AiFillGithub className="text-5xl pt-1 hvr_pulse text-gray-600 dark:text-gray-200 rounded-full hover:shadow-xl dark:hover:shadow-white/30" />
                 </a>
               </div>
               <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false}>
@@ -331,177 +359,107 @@ export default function Home() {
         </section>
 
     {/* ------------------------------ BACKGROUND ------------------------------ */}
-        <section>
-          <div>
+        <section className="pb-4">
+          <div >
             <h3 className="text-3xl py-1 dark:text-white"> My Background</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300"> 
-              I am a husband, father of a little boy, very good friend, and a passionate developer who is always 
-              looking for new challenges and opportunities to grow.
-            </p>
 
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300"> 
-            As a FullStack Developer, I specialize in Back End development and have a strong passion for 
-            solving complex challenges and implementing logical solutions. However, I am also highly skilled in Front End development, 
-            where I enjoy improving the user experience (UX) by creating visually appealing and intuitive interfaces.
-            </p>
+            <div className=" text-md ml-4 py-2 text-gray-800 dark:text-gray-300">
+                  <button
+                    className=" border rounded-full py-2 text-left 'bg-gray-100 px-4 dark:bg-gray-800 dark:hover:bg-gray-700
+                    hover:bg-gray-400 flex items-center justify-between"
+                    onClick={handleClick}
+                  >
+                    <span>Read more ... </span>
+                    <span className="ml-2">
+                      {isActive ? (
+                        <svg
+                          className="h-4 w-4 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M14.707 8.707a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L10 11.586l3.293-3.293a1 1 0 011.414 0z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      ) : (
+                        <svg
+                          className="h-4 w-4 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M5.293 6.293a1 1 0 011.414 0L10 9.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      )}
+                    </span>
+                  </button>
+                  {isActive && 
+                  <div className="shadow-lg py-3  rounded-xl bg-gray-200 mt-2 px-10 text-justify dark:bg-gray-800">
+                    <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300"> 
+                      I am a husband, father of a little boy, very good friend, and a passionate developer who is always 
+                      looking for new challenges and opportunities to grow.
+                    </p>
 
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300"> 
-            I am proficient in a range of technologies such as Javascript, React, React Native, Redux, Express,
-            Postgress Sql, Sequelize, MongoDB, and Mongoose, with plans to expand my knowledge in TypeScript, NextJs,
-              AWS, Firebase, and Google services.
-            </p>
+                    <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300"> 
+                    I began my career path in high school where I studied as a technician and programmer. This early exposure to programming 
+                    and electronics laid a strong foundation for my future career in technology. After completing my studies, 
+                    I started working in the industry of electronic security systems and hardware. This role allowed me to develop my 
+                    technical skills and gave me a practical understanding of how technology can be applied in real-world scenarios.
+                    </p>
+
+                    <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300"> 
+                    As I gained more experience in the tech industry, I became increasingly interested in the analytical side of systems. 
+                    I made the transition to working in IT analysis, where I had the opportunity to work with large data sets and identify 
+                    patterns and trends that helped businesses make informed decisions. This experience further expanded my skill set and gave 
+                    me a deeper understanding of how technology can drive business growth and success.
+                    </p>
+
+                    <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
+                    Despite my success in IT analysis, I found myself wanting to take my skills to the next level and become a developer. 
+                    I was drawn to the challenge of creating innovative solutions and bringing ideas to life through code. 
+                    I decided to take the leap and began pursuing development full-time.
+                    </p>
+
+                    <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300"> 
+                    I am now excited to continue growing and learning as a developer. I am passionate about creating clean, efficient, 
+                    and effective code that solves complex problems and drives business success. I believe that technology has the power to 
+                    transform the world and I am thrilled to be a part of this exciting industry.
+                    </p>
+
+                    <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300"> 
+                    Thank you for taking the time to read about my journey. I look forward to connecting with fellow developers and collaborating 
+                    on innovative projects.
+                    </p>
+                  </div>}
+                </div>
           </div>
   
-
-    <div className="">
-            
+        <div className=" max-w-3xl mx-auto">            
             {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-            <div className=" text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700" >
+            <div className=" text-center shadow-lg p-10 rounded-xl mb-10 mt-2 dark:bg-gray-700" >
               <div className="flex justify-center">
-                <Image claseName="flex justify-center" src={santi1} width={100} height={100} />
+                <Image claseName="flex justify-center" src={santi1} width={120} height={120} />
               </div>
-              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> My Background</h3>
-                <p className="py-2 dark:text-gray-300"> Creating elegant desing suited fpr yput client</p>
-              <h4 className="py-4 text-teal-600">Desing tools i use</h4>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Photoshop</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Ilustrator</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Figma</p>
+              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> About Santi </h3>
+                <p className="py-2 dark:text-gray-300"> I'm a friendly 29-year-old from Argentina.</p>
+              <h3 className="py-4 text-teal-600">Things I like</h3>
+                <p className="text-gray-800 py-1 dark:text-gray-300">⚡ Fun fact: I love Airsoft, very good strategist and a lot of good camaraderie. 🔫</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">🏕️ I love hanging out outdoors or parks, camping and fishing. 🎣</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">🌱  I’m looking to learn new technologies. 📈</p>
+                {/* <p className="text-gray-800 py-1 dark:text-gray-300">📫 How to reach me <a>santiagobavaresco@gmail.com</a></p> */}
             </div>
-
           </div>
-                  
-
-
-
-          
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
         </section>
+        
+      </main>
+      <Footer />
+    </div>
 
 
-        </main>
-      </div>
-
-
-
-    // <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    //   <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-    //     <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-    //       Get started by editing&nbsp;
-    //       <code className="font-mono font-bold">src/app/page.js</code>
-    //     </p>
-    //     <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-    //       <a
-    //         className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-    //         href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         By{' '}
-    //         <Image
-    //           src="/vercel.svg"
-    //           alt="Vercel Logo"
-    //           className="dark:invert"
-    //           width={100}
-    //           height={24}
-    //           priority
-    //         />
-    //       </a>
-    //     </div>
-    //   </div>
-
-    //   <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-    //     <Image
-    //       className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-    //       src="/next.svg"
-    //       alt="Next.js Logo"
-    //       width={180}
-    //       height={37}
-    //       priority
-    //     />
-    //   </div>
-
-    //   <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-    //     <a
-    //       href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className={`mb-3 text-2xl font-semibold`}>
-    //         Do00000cs{' '}
-    //         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-    //           -&gt;
-    //         </span>
-    //       </h2>
-    //       <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-    //         Find in-depth information about Next.js features and API.
-    //       </p>
-    //     </a>
-
-    //     <a
-    //       href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className={`mb-3 text-2xl font-semibold`}>
-    //         Learn{' '}
-    //         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-    //           -&gt;
-    //         </span>
-    //       </h2>
-    //       <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-    //         Learn about Next.js in an interactive course with&nbsp;quizzes!
-    //       </p>
-    //     </a>
-
-    //     <a
-    //       href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className={`mb-3 text-2xl font-semibold`}>
-    //         Templates{' '}
-    //         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-    //           -&gt;
-    //         </span>
-    //       </h2>
-    //       <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-    //         Explore the Next.js 13 playground.
-    //       </p>
-    //     </a>
-
-    //     <a
-    //       href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className={`mb-3 text-2xl font-semibold`}>
-    //         Deploy{' '}
-    //         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-    //           -&gt;
-    //         </span>
-    //       </h2>
-    //       <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-    //         Instantly deploy your Next.js site to a shareable URL with Vercel.
-    //       </p>
-    //     </a>
-    //   </div>
-    // </main>
   )
 }

@@ -9,9 +9,9 @@ export default function ImageCarousel({ keydiv, image}) {
                     className="rounded-lg object-cover" 
                     width={"100%"} 
                     height={"100%"} 
-                    layout={"responsive"} 
+                    placeholder="blur"
                     src={image}
-                    alt="1" 
+                    alt={keydiv} 
                 />
             </a>
         </div>
