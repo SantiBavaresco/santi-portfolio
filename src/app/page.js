@@ -275,6 +275,7 @@ export default function Home() {
                 <ImageCarousel keydiv="2" image={web_4_2} alt="1"/>
                 <ImageCarousel keydiv="3" image={web_4_3} alt="1"/>
                 <ImageCarousel keydiv="4" image={web_4_4} alt="1"/>
+                {/* <ImageCarousel keydiv="4" image={web_4_4} alt="1"/> */}
               </Carousel>
             </div> 
         {/* ------------------------------ Eat Out Dashboar ------------------------------ */}
