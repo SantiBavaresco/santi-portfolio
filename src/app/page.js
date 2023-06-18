@@ -70,7 +70,7 @@ export default function Home() {
           <section className='min-h-screen'>
 
     {/* ------------------------------ NAV BAR ------------------------------ */}
-            <nav className='py-10 mb-2 flex justify-between '>
+            <nav className='py-10 mb-2 flex justify-between items-center'>
 
               <h1 className='text-xl font-burtons dark:text-white'>developedBySanti</h1>
 
