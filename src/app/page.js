@@ -199,6 +199,7 @@ export default function Home() {
           <div className="lg:flex gap-10">
             
             {/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+            {/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
             <div className=" text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700 flex-1" >
               <div className="flex justify-center">
                 <Image claseName="flex justify-center" src={code} width={100} height={100} alt="1"/>
