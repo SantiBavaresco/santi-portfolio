@@ -1,6 +1,7 @@
 import '../../styles/globals.css'
 import { Inter } from 'next/font/google'
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Head from "next/head"
+// import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         <meta property="og:image" content="/avatar.png" />
+        
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
