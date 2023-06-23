@@ -115,6 +115,7 @@ export default function Home() {
                   <option value="en"> <img src={usa} className="w-6" /> </option>
                   <option value="es">Spanish  </option>
                   <option value="it">Three</option>
+                  <option value="it">Three</option>
                 </select> */}
                 </li>
                 <li>  </li>
