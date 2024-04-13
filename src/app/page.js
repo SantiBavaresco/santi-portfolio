@@ -179,73 +179,13 @@ export default function Home() {
 
           </section>
 
-    {/* ------------------------------ SERVICES & TOOLS ------------------------------ */}
-        <section>
-          <div>
-            <h3 className="text-3xl py-1 dark:text-white"> Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-justify text-gray-800 dark:text-gray-300"> 
-              With a proactive, analytical, creative and professional approach with the capacity for planning, organization and team
-              leadership; also with skills and criteria for decision making and <span className="text-teal-500">problem solving</span> labor problems, common
-              sense, security and permanent dialogue <span className="text-teal-500">to meet the objectives</span> with different areas.
-            </p>
-
-            <p className="text-md py-2 leading-8 text-justify text-gray-800 dark:text-gray-300"> 
-            I&apos;m a Full Stack Developer with a strong focus and a passion for solving complex challenges. I also excel in Front End development, 
-            enhancing user experiences with visually appealing interfaces. My expertise extends to React Native for mobile app development, 
-            enabling me to create cross-platform applications. Delivering high-quality, 
-            seamless applications that meet user needs.
-            </p>
-          </div>
-    {/* --------------------------------------- CARDS --------------------------------------- */}
-          <div className="lg:flex gap-10">
-            
-            {/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-            {/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-            <div className=" text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700 flex-1" >
-              <div className="flex justify-center">
-                <Image claseName="flex justify-center" src={code} width={100} height={100} alt="1"/>
-              </div>
-              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Code your project</h3>
-                <p className="py-2 dark:text-gray-300"> Do you have an idea for you next great website? Let&apos;s make it a reality!</p>
-              <h4 className="py-4 text-teal-600">Development knowledge</h4>
-                <p className="text-gray-800 py-1 dark:text-gray-300">React, React-Native</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">NextJS, Tailwind</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">PostGres, MongoDB</p>
-            </div>
-            {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-            <div className=" text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700 flex-1" >
-              <div className="flex justify-center">
-                <Image claseName="flex justify-center" src={cpu} width={100} height={100} alt="1"/>
-              </div>
-              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Connectivity and Security</h3>
-                <p className="py-2 dark:text-gray-300"> Creating robust and secure IT infrastructure, networking, and security systems to meet your needs.</p>
-              <h4 className="py-4 text-teal-600"> Implementations</h4>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Network & Hardware Setup</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">CCTV, Alarms & Security Sys.</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Fiber Optic Splicer & FTTH </p>
-            </div>
-            {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-            <div className=" text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-700 flex-1" >
-              <div className="flex justify-center">
-                <Image claseName="flex justify-center" src={consulting} width={100} height={100} alt="1"/>
-              </div>
-              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Consulting</h3>
-                <p className="py-2 dark:text-gray-300"> Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.</p>
-              <h4 className="py-4 text-teal-600">Desing tools i use</h4>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Front-End, Web, UX/UI</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Back-End, Databases</p>
-                <p className="text-gray-800 py-1 dark:text-gray-300">Home Servers, Datacenters</p>
-            </div>
-            {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-          </div>
-        </section>
+   
     {/* ------------------------------ PROYECTS ------------------------------ */}
         <section >
           <div >
-            <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white">Projects</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300"> 
-              It showcases my ability to build interactive interfaces with <span className="text-teal-500">React</span>, 
+              I bring interfaces to life with <span className="text-orange-500">React (NextJS- Tailwind)</span>, crafting user-centric experiences with
               develop cross-platform mobile apps using <span className="text-teal-500">React Native</span> , 
               efficiently manage databases with <span className="text-cyan-500">PostgreSQL</span>,
               and utilize <span className="text-cyan-500">MongoDB</span> for flexible NoSQL storage, 
@@ -360,6 +300,68 @@ export default function Home() {
                 <ImageCarousel keydiv="4" image={web3} alt="1"/>
               </Carousel>
             </div> */}
+          </div>
+        </section>
+
+     {/* ------------------------------ SERVICES & TOOLS ------------------------------ */}
+     <section>
+          <div>
+            <h3 className="text-3xl py-1 dark:text-white"> Services I offer</h3>
+            <p className="text-md py-2 leading-8 text-justify text-gray-800 dark:text-gray-300"> 
+              With a proactive, analytical, creative and professional approach with the capacity for planning, organization and team
+              leadership; also with skills and criteria for decision making and <span className="text-teal-500">problem solving</span> labor problems, common
+              sense, security and permanent dialogue <span className="text-teal-500">to meet the objectives</span> with different areas.
+            </p>
+
+            <p className="text-md py-2 leading-8 text-justify text-gray-800 dark:text-gray-300"> 
+            I&apos;m a Full Stack Developer with a strong focus and a passion for solving complex challenges. I also excel in Front End development, 
+            enhancing user experiences with visually appealing interfaces. My expertise extends to React Native for mobile app development, 
+            enabling me to create cross-platform applications. Delivering high-quality, 
+            seamless applications that meet user needs.
+            </p>
+          </div>
+    {/* --------------------------------------- CARDS --------------------------------------- */}
+          <div className="lg:flex gap-10">
+            
+            {/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+            {/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+            <div className=" text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700 flex-1" >
+              <div className="flex justify-center">
+                <Image claseName="flex justify-center" src={code} width={100} height={100} alt="1"/>
+              </div>
+              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Code your project</h3>
+                <p className="py-2 dark:text-gray-300"> Do you have an idea for you next great website? Let&apos;s make it a reality!</p>
+              <h4 className="py-4 text-teal-600">Development knowledge</h4>
+                <p className="text-gray-800 py-1 dark:text-gray-300">React, React-Native</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">NextJS, Tailwind</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">PostGres, MongoDB</p>
+            </div>
+            {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+            <div className=" text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700 flex-1" >
+              <div className="flex justify-center">
+                <Image claseName="flex justify-center" src={cpu} width={100} height={100} alt="1"/>
+              </div>
+              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Connectivity and Security</h3>
+                <p className="py-2 dark:text-gray-300"> Creating robust and secure IT infrastructure, networking, and security systems to meet your needs.</p>
+              <h4 className="py-4 text-teal-600"> Implementations</h4>
+                <p className="text-gray-800 py-1 dark:text-gray-300">Network & Hardware Setup</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">CCTV, Alarms & Security Sys.</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">Fiber Optic Splicer & FTTH </p>
+            </div>
+            {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+            <div className=" text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-gray-700 flex-1" >
+              <div className="flex justify-center">
+                <Image claseName="flex justify-center" src={consulting} width={100} height={100} alt="1"/>
+              </div>
+              <h3 className="text-lg font-medium pt-4 pb-2 dark:text-white"> Consulting</h3>
+                <p className="py-2 dark:text-gray-300"> Are you interested in feedback for your current project? I can
+                give you tips and tricks to level it up.</p>
+              <h4 className="py-4 text-teal-600">Desing tools i use</h4>
+                <p className="text-gray-800 py-1 dark:text-gray-300">Front-End, Web, UX/UI</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">Back-End, Databases</p>
+                <p className="text-gray-800 py-1 dark:text-gray-300">Home Servers, Datacenters</p>
+            </div>
+            {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
           </div>
         </section>
 
