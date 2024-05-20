@@ -245,7 +245,7 @@ export default function Home() {
                             <div className="basis-1/3 flex-1">
                                 <div className=" flex flex-row justify-center gap-4">
                                     <a
-                                        href="https://electroterma-red.vercel.app/soler&palau/TDA"
+                                        href="https://electroterma-red.vercel.app/soler&palau/TSA"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
