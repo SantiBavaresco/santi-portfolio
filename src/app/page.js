@@ -54,6 +54,8 @@ import web_6_1 from "../../public/web_6_1.png";
 import web_6_2 from "../../public/web_6_2.png";
 import web_6_3 from "../../public/web_6_3.png";
 
+import web_b from "../../public/web_b.png";
+
 export default function Home() {
     const [darkMode, setDarkMode] = useState(true);
     const buttonStyling = `flex space-x-3 mr-2 font-semibold bg-gradient-to-r from-blue-600 via-indigo-700 to-indigo-900 
@@ -275,22 +277,26 @@ export default function Home() {
                                 >
                                     <ImageCarousel
                                         keydiv="1"
-                                        image={web_5_1}
+                                        // image={web_5_1}
+                                        image={web_b}
                                         alt="1"
                                     />
                                     <ImageCarousel
                                         keydiv="2"
-                                        image={web_5_2}
+                                        image={web_b}
+                                        // image={web_5_2}
                                         alt="1"
                                     />
                                     <ImageCarousel
                                         keydiv="3"
-                                        image={web_5_3}
+                                        image={web_b}
+                                        // image={web_5_3}
                                         alt="1"
                                     />
                                     <ImageCarousel
                                         keydiv="4"
-                                        image={web_5_4}
+                                        image={web_b}
+                                        // image={web_5_4}
                                         alt="1"
                                     />
                                     {/* <ImageCarousel keydiv="4" image={web_4_4} alt="1"/> */}
